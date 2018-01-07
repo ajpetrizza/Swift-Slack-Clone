@@ -20,6 +20,9 @@
 		1DC31306200086FA007BD8AE /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC31305200086FA007BD8AE /* CreateAccountVC.swift */; };
 		1DC3130920009691007BD8AE /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3130820009691007BD8AE /* AuthService.swift */; };
 		1DC3130B2000A0E5007BD8AE /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3130A2000A0E5007BD8AE /* RoundedButton.swift */; };
+		1DC3130D200160DA007BD8AE /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3130C200160DA007BD8AE /* UserDataService.swift */; };
+		1DC3130F2001AED1007BD8AE /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3130E2001AED1007BD8AE /* AvatarPickerVC.swift */; };
+		1DC313112001B0AC007BD8AE /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC313102001B0AC007BD8AE /* AvatarCell.swift */; };
 		50D7FDC3FCF8FFC768F70C74 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60D8C37DDBF5024FBAC7B2C /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,9 @@
 		1DC31305200086FA007BD8AE /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		1DC3130820009691007BD8AE /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		1DC3130A2000A0E5007BD8AE /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		1DC3130C200160DA007BD8AE /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		1DC3130E2001AED1007BD8AE /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		1DC313102001B0AC007BD8AE /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		7D3DAEB038D8224823B14E94 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		C60D8C37DDBF5024FBAC7B2C /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FA923EA366F148CDD734AF /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +117,7 @@
 				1DC312FC200067FA007BD8AE /* ChannelVC.swift */,
 				1DC31303200083F7007BD8AE /* LoginVC.swift */,
 				1DC31305200086FA007BD8AE /* CreateAccountVC.swift */,
+				1DC3130E2001AED1007BD8AE /* AvatarPickerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -120,6 +127,7 @@
 			children = (
 				1DC312FE200075D5007BD8AE /* GradientView.swift */,
 				1DC3130A2000A0E5007BD8AE /* RoundedButton.swift */,
+				1DC313102001B0AC007BD8AE /* AvatarCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -143,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				1DC3130820009691007BD8AE /* AuthService.swift */,
+				1DC3130C200160DA007BD8AE /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -289,12 +298,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DC312FD200067FA007BD8AE /* ChannelVC.swift in Sources */,
+				1DC3130F2001AED1007BD8AE /* AvatarPickerVC.swift in Sources */,
 				1DC3130B2000A0E5007BD8AE /* RoundedButton.swift in Sources */,
 				1DC312FB200067E9007BD8AE /* ChatVC.swift in Sources */,
+				1DC3130D200160DA007BD8AE /* UserDataService.swift in Sources */,
 				1DC31306200086FA007BD8AE /* CreateAccountVC.swift in Sources */,
 				1DC3130920009691007BD8AE /* AuthService.swift in Sources */,
 				1DC31304200083F7007BD8AE /* LoginVC.swift in Sources */,
 				1DC312FF200075D5007BD8AE /* GradientView.swift in Sources */,
+				1DC313112001B0AC007BD8AE /* AvatarCell.swift in Sources */,
 				1DC312E1200054FC007BD8AE /* AppDelegate.swift in Sources */,
 				1DC312F62000628E007BD8AE /* SWRevealViewController.m in Sources */,
 				1DC3130220007F50007BD8AE /* Constants.swift in Sources */,
