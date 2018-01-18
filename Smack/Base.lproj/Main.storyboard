@@ -241,7 +241,14 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="COc-l7-6bY" eventType="touchUpInside" id="0Pi-Ht-i3i"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="cpr-6j-08V">
+                                <rect key="frame" x="188.66666666666666" y="249.66666666666663" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -255,10 +262,15 @@
                             <constraint firstItem="GuL-74-kv5" firstAttribute="top" secondItem="Imu-64-wsM" secondAttribute="bottom" constant="40" id="dxO-6Z-X5R"/>
                             <constraint firstItem="Imu-64-wsM" firstAttribute="top" secondItem="mld-iC-ttV" secondAttribute="bottom" constant="40" id="fUj-If-Lnp"/>
                             <constraint firstItem="mld-iC-ttV" firstAttribute="centerX" secondItem="P27-VY-t8m" secondAttribute="centerX" id="kz7-E3-qIt"/>
+                            <constraint firstItem="cpr-6j-08V" firstAttribute="centerX" secondItem="P27-VY-t8m" secondAttribute="centerX" id="lDd-QH-JBE"/>
+                            <constraint firstItem="cpr-6j-08V" firstAttribute="centerY" secondItem="P27-VY-t8m" secondAttribute="centerY" constant="-100" id="zUs-XT-lMd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="y8h-qW-Qyw"/>
                     </view>
                     <connections>
+                        <outlet property="passwordText" destination="k1w-Ls-cRJ" id="gbR-pI-ymP"/>
+                        <outlet property="spinner" destination="cpr-6j-08V" id="Dbb-kV-5r5"/>
+                        <outlet property="usernameText" destination="NAc-d1-o4i" id="rSF-KG-5pI"/>
                         <segue destination="bGw-Le-nKD" kind="show" identifier="toCreateAccount" id="wmC-cd-ZOG"/>
                     </connections>
                 </viewController>

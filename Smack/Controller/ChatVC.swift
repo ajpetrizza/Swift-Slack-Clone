@@ -22,6 +22,13 @@ class ChatVC: UIViewController {
         // adding tap and swipe to reveal and hide the view
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+        
+        //checking if we are logged in
+        if AuthService.instance.isLoggedIn {
+            AuthService.instance.findUserByEmail(completion: { (success) in
+                NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+            })
+        }
     }
 
     
