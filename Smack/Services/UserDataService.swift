@@ -29,4 +29,50 @@ class UserDataService {
         self.avatarName = avatarName
     }
     
+    func returnUIColor(components: String) -> UIColor {
+        // Extract from the string value in the database and make it a UICOlor
+        // reads in the data in its original format
+        let scanner = Scanner(string: components)
+        // telling our scanner what we need to skip
+        let skipped = CharacterSet(charactersIn: "[], ")
+        // this is the character we need to stop reading at for each value
+        let comma = CharacterSet(charactersIn: ",")
+        scanner.charactersToBeSkipped = skipped
+        
+        var r, g, b, a : NSString?
+        
+        scanner.scanUpToCharacters(from: comma, into: &r)
+        scanner.scanUpToCharacters(from: comma, into: &g)
+        scanner.scanUpToCharacters(from: comma, into: &b)
+        scanner.scanUpToCharacters(from: comma, into: &a)
+        
+        // create a default color if there is a failure
+        let defaultColor = UIColor.lightGray
+        
+        // time to unwrap the optional values
+        guard let rUnwrapped = r else {return defaultColor}
+        guard let gUnwrapped = g else {return defaultColor}
+        guard let bUnwrapped = b else {return defaultColor}
+        guard let aUnwrapped = a else {return defaultColor}
+        
+        // converting string value to double and then double to CGFloat
+        let rFloat = CGFloat(rUnwrapped.doubleValue)
+        let gFloat = CGFloat(gUnwrapped.doubleValue)
+        let bFloat = CGFloat(bUnwrapped.doubleValue)
+        let aFloat = CGFloat(aUnwrapped.doubleValue)
+        
+        // finally create color
+        let newUIColor = UIColor(red: rFloat, green: gFloat, blue: bFloat, alpha: aFloat)
+        
+        return newUIColor
+    }
+    
 }
+
+
+
+
+
+
+
+
