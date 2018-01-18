@@ -23,9 +23,9 @@ class MessageService {
             
             if response.result.error == nil {
                 guard let data = response.data else {return}
-                if let json = try! JSON(data: data).array {
+                if let json = try? JSON(data: data).array {
                     // loop through the array of json objects and grab each value we need
-                    for item in json {
+                    for item in json! {
                         let name = item["name"].stringValue
                         let channelDescription = item["description"].stringValue
                         let id = item["_id"].stringValue
@@ -33,6 +33,7 @@ class MessageService {
                         // create new channel object with our data and add it to our array
                         let channel = Channel(channelTitle: name, channelDescription: channelDescription, id: id)
                         self.channels.append(channel)
+                        print(self.channels[0].channelTitle)
                     }
                     completion(true)
                 }

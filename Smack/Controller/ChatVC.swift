@@ -17,6 +17,10 @@ class ChatVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // grabbing all our channels SHORTCUT FOR NOW
+        MessageService.instance.findAllChannels { (success) in
+            
+        }
 
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
         // adding tap and swipe to reveal and hide the view
@@ -29,6 +33,8 @@ class ChatVC: UIViewController {
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
             })
         }
+        
+        
     }
 
     
