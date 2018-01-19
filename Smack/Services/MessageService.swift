@@ -43,6 +43,7 @@ class MessageService {
 
             } else {
                 completion(false)
+                debugPrint("error in FINDALLCHANNELS")
                 debugPrint(response.result.error as Any)
             }
         }
@@ -73,11 +74,12 @@ class MessageService {
                         // append message to messages
                         self.messages.append(message)
                     }
-                    print(self.messages)
+//                    print(self.messages)
                     completion(true)
                 }
             } else {
                 debugPrint(response.result.error as Any)
+                debugPrint("Error result in FINDALLMESSAGESFORCHANNEL")
                 completion(false)
             }
         }
