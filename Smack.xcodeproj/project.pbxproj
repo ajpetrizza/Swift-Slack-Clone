@@ -34,6 +34,7 @@
 		1DC31324201169D6007BD8AE /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC31323201169D6007BD8AE /* SocketService.swift */; };
 		1DC3132620117ECC007BD8AE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3132520117ECC007BD8AE /* Message.swift */; };
 		1DC313282011A85B007BD8AE /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC313272011A85B007BD8AE /* KeyboardBoundView.swift */; };
+		1DC3132A2011ADBB007BD8AE /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC313292011ADBB007BD8AE /* MessageCell.swift */; };
 		50D7FDC3FCF8FFC768F70C74 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60D8C37DDBF5024FBAC7B2C /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		1DC31323201169D6007BD8AE /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
 		1DC3132520117ECC007BD8AE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		1DC313272011A85B007BD8AE /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
+		1DC313292011ADBB007BD8AE /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		7D3DAEB038D8224823B14E94 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		C60D8C37DDBF5024FBAC7B2C /* Pods_Smack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4FA923EA366F148CDD734AF /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				1DC313102001B0AC007BD8AE /* AvatarCell.swift */,
 				1DC3131220070924007BD8AE /* CircleImage.swift */,
 				1DC3131D201064BB007BD8AE /* ChannelCell.swift */,
+				1DC313292011ADBB007BD8AE /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				1DC3131E201064BB007BD8AE /* ChannelCell.swift in Sources */,
 				1DC312FD200067FA007BD8AE /* ChannelVC.swift in Sources */,
 				1DC3130F2001AED1007BD8AE /* AvatarPickerVC.swift in Sources */,
+				1DC3132A2011ADBB007BD8AE /* MessageCell.swift in Sources */,
 				1DC3130B2000A0E5007BD8AE /* RoundedButton.swift in Sources */,
 				1DC3132620117ECC007BD8AE /* Message.swift in Sources */,
 				1DC3131C20105F76007BD8AE /* Channel.swift in Sources */,
